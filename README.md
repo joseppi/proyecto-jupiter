@@ -16,7 +16,7 @@ Para después quedan otras fuentes y buzones, agentes autónomos, RAG de propós
 
 | Parte del flujo | Herramientas |
 | --- | --- |
-| Aplicación web y campaña | Python, FastAPI y Jinja |
+| API de campaña y demo | Python y FastAPI. Demo desde Swagger UI (`/docs`) |
 | Descubrimiento y selección | YouTube Data API, PostgreSQL con pgvector y embeddings de Gemini para recuperar evidencias |
 | Borradores de contacto y respuesta | Gemini, con fuentes y una plantilla revisada |
 | Envío y gestión de hilos | Gmail API con OAuth |
@@ -32,6 +32,8 @@ Para después quedan otras fuentes y buzones, agentes autónomos, RAG de propós
 
 ## Cómo validaremos el MVP
 
-Haremos el recorrido completo con un buzón de prueba. Sobre el mismo lote, compararemos Júpiter con el flujo actual de PK Marketing por tiempo hasta tener un borrador revisado, perfiles relevantes con fuentes y correcciones necesarias. También compararemos la búsqueda vectorial con una búsqueda por palabras clave.
+Haremos el recorrido completo desde `/docs` de FastAPI con un buzón de prueba. El operador revisará y podrá editar los borradores antes de aprobar cada envío o respuesta. Una pantalla de revisión y aprobación queda como opcional si `/docs` resulta incómodo durante el ensayo de la demo.
+
+Sobre el mismo lote, compararemos Júpiter con el flujo actual de PK Marketing por tiempo hasta tener un borrador revisado, perfiles relevantes con fuentes y correcciones necesarias. También compararemos la búsqueda vectorial con una búsqueda por palabras clave.
 
 **Estado** · Propuesta de MVP e implementación pendiente.
